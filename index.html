@@ -1,0 +1,224 @@
+<!--
+  ╔══════════════════════════════════════════════════════════╗
+  ║                    COMO EDITAR                          ║
+  ╠══════════════════════════════════════════════════════════╣
+  ║                                                         ║
+  ║  🔗 TROCAR LINKS:                                       ║
+  ║     Procure os <article class="link-card"> abaixo.      ║
+  ║     Em cada card, edite o atributo data-link="..."      ║
+  ║     e o href="..." do <a class="btn">.                  ║
+  ║                                                         ║
+  ║  📸 TROCAR IMAGENS:                                     ║
+  ║     Coloque as imagens na pasta /assets/ com os nomes:  ║
+  ║     • principal.png  → foto do hero                     ║
+  ║     • card-1.png     → imagem do card 1                ║
+  ║     • card-2.png     → imagem do card 2                ║
+  ║     • sobre.png      → foto da seção "Quem é"          ║
+  ║                                                         ║
+  ║  📱 TROCAR @INSTAGRAM:                                   ║
+  ║     Busque "pilatesgabixavier" e substitua pelo @.      ║
+  ║     São 3 lugares: topbar, footer e aria-labels.        ║
+  ║                                                         ║
+  ║  ✏️  TROCAR TEXTOS:                                      ║
+  ║     Edite os <h2>, <p>, <span> dentro de cada seção.    ║
+  ║                                                         ║
+  ╚══════════════════════════════════════════════════════════╝
+-->
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gabi Xavier — Pilates &amp; Fisioterapia</title>
+    <meta
+      name="description"
+      content="Gabi Xavier — Fisioterapeuta e instrutora de Pilates em Itajubá MG. +10 anos transformando corpos e mentes."
+    />
+    <meta name="theme-color" content="#7B5CC0" />
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600;700&family=Noto+Serif+Display:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600;700&family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,600;1,700&family=Noto+Serif+Display:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Topbar -->
+    <header class="topbar container">
+      <a
+        class="ig-pill"
+        href="https://instagram.com/pilatesgabixavier"
+        target="_blank"
+        rel="noopener"
+        aria-label="Instagram @pilatesgabixavier"
+      >
+        <svg class="ig" viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A5.5 5.5 0 1 1 6.5 13 5.5 5.5 0 0 1 12 7.5zm0 2A3.5 3.5 0 1 0 15.5 13 3.5 3.5 0 0 0 12 9.5zM18 6.2a1.2 1.2 0 1 1-1.2 1.2A1.2 1.2 0 0 1 18 6.2z"
+          />
+        </svg>
+        <span>@pilatesgabixavier</span>
+      </a>
+    </header>
+
+    <main>
+      <!-- ═══════ HERO ═══════ -->
+      <section class="hero">
+        <div class="hero-visual container">
+          <img
+            class="hero-img"
+            src="assets/gabiPerfil-2-semfundo.png"
+            alt="Gabi Xavier"
+          />
+          <div class="hero-overlay-text">
+            <p class="hero-subtitle">Fisioterapeuta e Instrutora de Pilates</p>
+            <h1 class="hero-title">Gabi Xavier</h1>
+          </div>
+        </div>
+        <p class="hero-bio container">
+          Mais de 10 anos dedicados a transformar corpos e mentes. Postura,
+          fortalecimento e alívio de dores com quem entende de movimento. De
+          Itajubá MG para todo o Brasil.
+        </p>
+      </section>
+
+      <!-- ═══════ CARDS / LINKS ═══════ -->
+      <section id="links" class="links container">
+        <!-- Card 1 — Agende sua Aula Presencial -->
+        <article
+          class="link-card glass"
+          role="link"
+          tabindex="0"
+          aria-label="Agendar aula de Pilates presencial"
+          data-link="https://wa.me/5535999940656?text=Ol%C3%A1%20Gabi!%20Quero%20agendar%20minha%20aula%20de%20Pilates%20presencial%20%F0%9F%A7%98%E2%80%8D%E2%99%80%EF%B8%8F"
+        >
+          <div class="media gradient">
+            <img src="assets/PilatesEmCasa.jpeg" alt="Aula Presencial" />
+          </div>
+          <div class="content">
+            <h2 class="card-title">
+              <span class="line1">SUA AULA</span>
+              <span class="line2">PRESENCIAL</span>
+            </h2>
+            <a
+              class="btn"
+              href="https://wa.me/5535999940656?text=Ol%C3%A1%20Gabi!%20Quero%20agendar%20minha%20aula%20de%20Pilates%20presencial%20%F0%9F%A7%98%E2%80%8D%E2%99%80%EF%B8%8F"
+              target="_blank"
+              rel="noopener"
+              >Agendar</a
+            >
+          </div>
+        </article>
+
+        <!-- Card 2 — Curso Online -->
+        <article
+          class="link-card glass"
+          role="link"
+          tabindex="0"
+          aria-label="Acessar curso Pilates em Casa"
+          data-link="https://www.pilatesgabixavier.com.br/landing"
+        >
+          <div class="media gradient">
+            <img src="assets/card-2.png" alt="Curso Pilates em Casa" />
+          </div>
+          <div class="content">
+            <h2 class="card-title">
+              <span class="line1">PILATES</span>
+              <span class="line2">EM CASA</span>
+            </h2>
+            <a
+              class="btn"
+              href="https://www.pilatesgabixavier.com.br/landing"
+              target="_blank"
+              rel="noopener"
+              >Quero participar</a
+            >
+          </div>
+        </article>
+      </section>
+
+      <!-- ═══════ SOBRE / QUEM É ═══════ -->
+      <section id="about" class="about-section">
+        <div class="container">
+          <div class="about-wrap">
+            <div class="about-media">
+              <img src="assets/sobre.png" alt="Gabi Xavier" />
+            </div>
+            <div class="about-copy">
+              <h2 class="about-eyebrow">QUEM É</h2>
+              <h3 class="about-title">GABI XAVIER</h3>
+              <p>Oi, eu sou a Gabi. Tenho _ anos e sou formada em ____.</p>
+              <p>
+                O Pilates entrou na minha vida como profissão... mas virou
+                propósito. Ao longo da minha carreira, eu percebi que o
+                movimento vai muito além do exercício. Ele muda a forma como a
+                gente se sente no próprio corpo.
+              </p>
+              <p>
+                Depois de anos atendendo presencialmente, eu senti que queria ir
+                além das paredes do studio. Foi assim que nasceu esse espaço
+                online.
+              </p>
+              <p>
+                Aqui, eu ensino Pilates de forma clara, acessível e consciente,
+                respeitando o seu ritmo e a sua rotina.
+              </p>
+              <p>
+                Meu objetivo é que você se sinta mais forte, mais alinhada... e
+                principalmente, mais conectada com você mesma.
+              </p>
+              <p>Seja bem-vinda. Vamos começar?</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ═══════ FOOTER ═══════ -->
+    <footer class="site-footer">
+      <div class="footer container">
+        <h2 class="footer-wordmark">Gabi Xavier</h2>
+
+        <div class="footer-meta">
+          <p>&copy; <span id="y"></span> Gabi Xavier</p>
+          <a
+            class="footer-ig"
+            href="https://instagram.com/pilatesgabixavier"
+            target="_blank"
+            rel="noopener"
+          >
+            <svg class="ig" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A5.5 5.5 0 1 1 6.5 13 5.5 5.5 0 0 1 12 7.5zm0 2A3.5 3.5 0 1 0 15.5 13 3.5 3.5 0 0 0 12 9.5zM18 6.2a1.2 1.2 0 1 1-1.2 1.2A1.2 1.2 0 0 1 18 6.2z"
+              />
+            </svg>
+            <span>@pilatesgabixavier</span>
+          </a>
+        </div>
+
+        <p class="credit">
+          Desenvolvido por
+          <a
+            class="credit-link"
+            href="https://www.instagram.com/mateus_bonette/"
+            target="_blank"
+            rel="noopener"
+            aria-label="Abrir Instagram de Mateus Bonette"
+          >
+            @mateus_bonette
+          </a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
