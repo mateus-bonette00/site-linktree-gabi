@@ -219,7 +219,7 @@ body::after {
 
 .hero-img {
   display: block;
-  width: min(700px, 75vw);
+  width: min(750px, 75vw);
   height: auto;
   margin: 0 auto;
   object-fit: contain;
@@ -330,6 +330,19 @@ body::after {
 .link-card:focus-within .media img,
 .link-card.is-touch .media img {
   transform: scale(1.08);
+}
+
+/* Card com foto portrait — mostra imagem completa sem cortar */
+.link-card .media--contain img {
+  height: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+  transform: none;
+}
+.link-card:hover .media--contain img,
+.link-card:focus-within .media--contain img,
+.link-card.is-touch .media--contain img {
+  transform: none;
 }
 
 /* Gradient atrás das fotos dos cards */
