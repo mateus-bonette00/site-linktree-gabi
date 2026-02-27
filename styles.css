@@ -393,7 +393,7 @@ body::after {
   text-decoration: none;
   font-weight: 700;
   letter-spacing: 0.3px;
-  font-size: 14px;
+  font-size: 20px;
   color: var(--white);
   background: linear-gradient(135deg, var(--lav-700) 0%, var(--lav-600) 100%);
   box-shadow:
@@ -449,6 +449,10 @@ body::after {
     flex-direction: column;
     align-items: flex-start;
   }
+  .btn {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
 
   .hero {
     padding: 8px 0 0;
@@ -468,6 +472,10 @@ body::after {
   }
   .card-title {
     font-size: clamp(20px, 6vw, 28px);
+  }
+  .btn {
+    font-size: 13px;
+    padding: 8px 14px;
   }
 
   .hero {
@@ -643,6 +651,7 @@ body::after {
 
 /* ═══════ REDUCED MOTION ═══════ */
 @media (prefers-reduced-motion: reduce) {
+  
   body::after {
     animation: none !important;
   }
